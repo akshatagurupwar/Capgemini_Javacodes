@@ -1,0 +1,11 @@
+package com.capgi.arrayassignment;
+
+public class AvgOfThreeNo {
+	public static void main(String args[])   
+	{  
+	int n1 = 225, n2 = 115, n3=345,Avg;  
+	Avg = n1 + n2+ n3;  
+	System.out.println("The sum of numbers is: "+(double)Avg/3);  
+	}  
+
+}

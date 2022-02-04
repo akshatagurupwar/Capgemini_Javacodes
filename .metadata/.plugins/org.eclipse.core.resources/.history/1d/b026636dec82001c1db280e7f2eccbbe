@@ -1,0 +1,27 @@
+package com.capgi.day2;
+
+import java.util.Scanner;
+
+public class Average {
+	public static void main(String args[])
+	{
+		int a[]=new int[5];
+		int count=0;
+		int sum=0;
+		Scanner sc=new Scanner(System.in);
+		
+		for(int i=0;i<5;i++)
+		{
+			a[i]=sc.nextInt();
+			count++;
+		}
+		for(int i=0;i<5;i++)
+		{
+			sum=sum+a[i];
+		}
+		System.out.println((double)sum/count);
+		sc.close();
+	}
+
+
+}
