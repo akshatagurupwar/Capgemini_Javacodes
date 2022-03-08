@@ -11,6 +11,7 @@ package com.capgi.day4;
 import java.util.*;
 
 
+
 class EmployeeM {
 	
 	public String getName() {
@@ -60,6 +61,9 @@ class EmployeeM {
 }
 
 public class EmployeeManagement {
+	
+	
+
 
 	public static void main(String arg[]) {
 
@@ -87,7 +91,6 @@ public class EmployeeManagement {
 			if (choice == 1) {
 				System.out.println("Enter the Number of Employee you want to enter");
 				int size = sc.nextInt();
-				emp=new EmployeeM[size];
 				for (int i = 0; i < size; i++) {
 					
 					System.out.println("Enter name Employee "+i);
@@ -96,7 +99,7 @@ public class EmployeeManagement {
 					int id=sc.nextInt();
 					System.out.println("Enter Salary Employee "+i);
 					int salary=sc.nextInt();
-               emp[i]=new EmployeeM(name,id,salary); 
+                     ; 
 				}
 
 			}

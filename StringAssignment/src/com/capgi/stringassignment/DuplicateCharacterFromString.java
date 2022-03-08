@@ -18,8 +18,8 @@ public class DuplicateCharacterFromString {
             count = 1;  
             for(int j = i+1; j <string.length; j++) {  
                 if(string[i] == string[j] && string[i] != ' ') {  
-                    count++;  
-                    string[j] = '0';  
+                    count++;
+                    string[j]='0';
                 }  
             }  
             if(count > 1 && string[i] != '0')  

@@ -1,9 +1,0 @@
-package com.capgi.day5;
-
-public class MyInteger {
-
-	public static void main(String args[])
-	{
-		System.out.println("akshata");
-	}
-}
