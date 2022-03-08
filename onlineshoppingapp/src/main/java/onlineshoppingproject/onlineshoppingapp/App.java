@@ -15,6 +15,29 @@ public class App
     public static void main( String[] args )
     {
         ApplicationContext context=new ClassPathXmlApplicationContext("springbeans.xml");
+
+    	User user = context.getBean("user",User.class);
+    	System.out.println("User-Name       : " +user.getUsername());
+    	System.out.println("Email Id        : "+user.getEmail());
+    	System.out.println("Password        : "+user.getPassword());
+    	System.out.println("Shipping Address: "+user.getShipping_address());
+    	System.out.println("Billing Address : "+user.getBilling_address());
+    	System.out.println("=================================================================================");
+    	
+    	Product product = context.getBean("product",Product.class);
+    	System.out.println("Product Name     : "+product.getProduct_name());
+    	System.out.println("Price            : "+product.getPrice());
+    	System.out.println("Quantity In Stock: "+product.getQuantity_in_stock());
+    	System.out.println("Image Location   : "+product.getImagelocation());
+    	System.out.println("=================================================================================");
+
+
+
+
+
+
+
+
         Order order=context.getBean("order",Order.class);
         
 
